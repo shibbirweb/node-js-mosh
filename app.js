@@ -1,5 +1,13 @@
-function sayHello(name){
-    console.log('Hello ' + name)
-}
+console.log(); // global
 
-sayHello('Shibbir')
+
+setTimeout()
+clearTimeout()
+
+setInterval()
+clearInterval()
+
+
+var message = '';
+
+global.setTimeout() // for node js
