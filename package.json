@@ -1,0 +1,19 @@
+{
+  "name": "node-mosh",
+  "version": "1.0.0",
+  "description": "Node JS practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shibbirweb/node-js-mosh.git"
+  },
+  "author": "MD. Shibbir Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shibbirweb/node-js-mosh/issues"
+  },
+  "homepage": "https://github.com/shibbirweb/node-js-mosh#readme"
+}
