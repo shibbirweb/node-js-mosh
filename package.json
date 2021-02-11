@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shibbirweb/node-js-mosh#readme",
   "dependencies": {
+    "mongoose": "^5.11.15",
     "underscore": "^1.12.0"
   }
 }
