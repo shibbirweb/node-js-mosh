@@ -1,4 +1,3 @@
-const { func } = require('joi');
 const Joi = require('joi');
 
 const genreValidation = (genre) => {
