@@ -18,6 +18,7 @@
   "homepage": "https://github.com/shibbirweb/node-js-mosh#readme",
   "dependencies": {
     "config": "^3.3.3",
+    "debug": "^4.3.1",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
     "joi": "^17.4.0",
