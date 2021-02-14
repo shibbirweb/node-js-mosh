@@ -18,6 +18,8 @@
   "homepage": "https://github.com/shibbirweb/node-js-mosh#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "joi": "^17.4.0"
+    "helmet": "^4.4.1",
+    "joi": "^17.4.0",
+    "morgan": "^1.10.0"
   }
 }
