@@ -11,11 +11,27 @@ console.log("Before");
   });
 }); */
 
-getUser(1)
-    .then(user => getRepositories(user.gitHubUsername))
-    .then(repositories => getCommits(repositories[0]))
-    .then(commits => console.log('Commits', commits))
-    .catch(error => console.log('Error', error.message))
+// getUser(1)
+//     .then(user => getRepositories(user.gitHubUsername))
+//     .then(repositories => getCommits(repositories[0]))
+//     .then(commits => console.log('Commits', commits))
+//     .catch(error => console.log('Error', error.message));
+
+// Async and Await approach
+async function displayCommits(){
+    try {
+        const user = await getUser(1);
+        const repositories = await getRepositories(user.gitHubUsername);
+        const commits = await getCommits(repositories[0]);
+        console.log(commits);
+
+    } catch (error) {
+        console.log("Error", error.message);
+    }
+    
+}
+
+displayCommits();
 
 console.log("After");
 
@@ -39,7 +55,8 @@ function getRepositories(username){
         setTimeout(() => {
             console.log('Calling GitHub API...');
             const repositories = ['repo1', 'repo2', 'repo3'];
-            resolve(repositories);
+            //resolve(repositories);
+            reject(new Error('Something failed'));
         }, 2000);
     });
 }
