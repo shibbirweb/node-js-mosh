@@ -1,6 +1,6 @@
 // Asynchronous
 console.log("Before");
-getUser(1, (user) => {
+/* getUser(1, (user) => {
   console.log(user);
 
   // get the repositories
@@ -9,7 +9,14 @@ getUser(1, (user) => {
           // CALLBACK HELL
       })
   });
-});
+}); */
+
+getUser(1)
+    .then(user => getRepositories(user.gitHubUsername))
+    .then(repositories => getCommits(repositories[0]))
+    .then(commits => console.log('Commits', commits))
+    .catch(error => console.log('Error', error.message))
+
 console.log("After");
 
 
