@@ -1,14 +1,18 @@
-const express = require("express");
+console.log("Before");
+const user = getUser(1);
+console.log(user);
+console.log("After");
 
-const genres = require('./routes/genres')
+// Callback
+// Promises
+// Async/await
 
-const app = express();
-// json parser
-app.use(express.json());
-
-// genre routes
-app.use('/api/genres', genres);
-
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}`));
+function getUser(id) {
+  setTimeout(() => {
+    console.log("Reading a user from database...");
+    return {
+        id: id,
+        gitHubUsername: 'shibbir'
+    }
+  }, 2000);
+}

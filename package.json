@@ -1,7 +1,7 @@
 {
-  "name": "nodemosh",
+  "name": "nodoMosh",
   "version": "1.0.0",
-  "description": "Node JS practice",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,19 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/shibbirweb/node-js-mosh.git"
   },
-  "author": "MD. Shibbir Ahmed",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shibbirweb/node-js-mosh/issues"
   },
-  "homepage": "https://github.com/shibbirweb/node-js-mosh#readme",
-  "dependencies": {
-    "config": "^3.3.3",
-    "debug": "^4.3.1",
-    "express": "^4.17.1",
-    "helmet": "^4.4.1",
-    "joi": "^17.4.0",
-    "morgan": "^1.10.0",
-    "pug": "^3.0.0"
-  }
+  "homepage": "https://github.com/shibbirweb/node-js-mosh#readme"
 }
