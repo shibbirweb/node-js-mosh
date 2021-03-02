@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shibbirweb/node-js-mosh/issues"
   },
-  "homepage": "https://github.com/shibbirweb/node-js-mosh#readme"
+  "homepage": "https://github.com/shibbirweb/node-js-mosh#readme",
+  "dependencies": {
+    "mongoose": "^5.11.18"
+  }
 }
