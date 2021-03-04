@@ -54,17 +54,22 @@ async function getCourses() {
     // .and()
 
     // starts with Mosh
-    .find({ author: /^Mosh/ })
+    // .find({ author: /^Mosh/ })
 
     // Ends with Hamedani
-    .find({ author: /Hamdedani$/i })
+    // .find({ author: /Hamdedani$/i })
 
     // Contains Mosh
-    .find({ author: /.*Mosh.*/i })
-
+    // .find({ author: /.*Mosh.*/i })
+    .find({ author: 'Mosh', isPublished: true })
     .limit(10)
     .sort({ name: 1 })
-    .select({ name: 1, tags: 1 });
+    
+    // retrieve only specific column
+    //.select({ name: 1, tags: 1 });
+
+    // get the number of documents
+    .count();
 
   console.log(courses);
 }
