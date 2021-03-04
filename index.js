@@ -45,6 +45,10 @@ async function getCourses() {
   // or
   // and
 
+  // Paginations
+  const pageNumber = 2;
+  const pageSize = 10
+
   const courses = await Course
     // .find({ author: 'Mosh', isPublished: true })
     // .find({ price: { $gte: 10, $lte: 20 } })
@@ -62,6 +66,8 @@ async function getCourses() {
     // Contains Mosh
     // .find({ author: /.*Mosh.*/i })
     .find({ author: 'Mosh', isPublished: true })
+    .skip((pageNumber - 1) * pageSize)
+    .limit(pageSize)
     .limit(10)
     .sort({ name: 1 })
     
